@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="../Pokémon/js/javascript.js"></script>
+  
+  <title>Pokémon</title>
+
+  <link rel="stylesheet" href="../Pokémon/css/style.css">
+
+  <!--CSS BOOTSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--SCRIPT BOOTSTRAP -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+    <script src="js/javascript.js"></script>
+</head>
+
+<body>
+  <!--Barre de menu -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Pokémon Fighter</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+      </form>
+    </div>
+  </nav>
+  
+  <!-- INTERFACE de COMBAT -->
+  <div class="row bg-primary rounded-lg">
+    <!-- Liste des attaques -->
+
+
+
+
+    <div class="col-4 bg-success border border-secondary">
+
+      <div class="row m-3 rounded-lg">
+
+
+
+        <!-- 4 attaques-->
+       <span class="attaque col text-center border border-dark rounded-lg" onclick="attaquerapide()" > Vive-attaque <br> <span id="truc"> PP : 25/25</span></span> 
+        
+        <span class="attaque col text-c enter border border-dark rounded-lg" onclick="flammouille()"> Flammèche <br> <span id="machin"> PP : 25/25</span></span>
+      </div>
+
+      <div class="row m-3 rounded-lg">
+        <span class="attaque col text-center border border-dark rounded-lg" onclick="lanceburne()"> Lance-Flamme <br> <span id="chose"> PP : 15/15</span></span>
+        <span class="attaque col text-center border border-dark rounded-lg" onclick="déflagrasion()"> Déflagration <br> <span id="bidule"> PP : 5/5</span></span>
+      </div>
+      <div class="progress">
+        <div id="pointdevie" class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100 PV</div>
+      </div>
+    </div>
+    <div class="col-7 ml-3">
+
+      <img src="../Pokémon/images/simiabrase.png" alt="" style="width: 20%" id="bob" class="viveattaque">
+      <img src="../Pokémon/images/germinion.png" alt="" style="float: right; width: 20%; padding-top: 1.5%" id="ennemi">
+      <img src="../Pokémon/images/vraikamehameha.png" alt="" id="jeanbernard" style="width: 1%; opacity: 0; visibility: hidden;" class="anime">
+      <img src="../Pokémon/images/deflagration.png" alt="" id="petiteflamme" style="width: 1%; opacity: 0; visibility: hidden;" class="femme" >
+      <img src="../Pokémon/images/flame.png" alt="" id="megafeu" style="width: 1%; opacity: 0 ;visibility: hidden;" class="megaboulefeu">
+      <img src="../Pokémon/images/explosion.png" alt="" style="width: 15%; float :right; padding-top : 50px; padding-left: 25px; visibility: hidden" class="explosionmec">
+
+
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>

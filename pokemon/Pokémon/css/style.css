@@ -1,0 +1,64 @@
+.attaque{
+  margin: 10px;
+  
+}
+
+.attaque:hover {
+  background-color: gold;
+}
+
+
+/* annimation lance flamme et flammèche */
+.anime{
+  animation-name: kamehameha;
+  animation-duration: 0.5s;
+}
+
+.femme{
+  animation-name: kamehameha;
+  animation-duration: 0.5s;
+}
+
+  @keyframes kamehameha {
+    0%   { opacity: 0; transform: translateX(0px) ; width: 1%; visibility: visible; }
+    50%  { opacity: 100; transform: translateX(350px) ; width: 20%; visibility: visible;}
+    100% {opacity: 0; transform: translateX(700px) ; width: 20%; visibility: visible; }
+  }
+
+
+
+ /*  annimation de la vive attaque */
+ 
+.viveattaque{
+  animation-name: example;
+  animation-duration: 0.5s;
+ }
+  
+  
+ @keyframes example {
+    0%   { transform: translateX(0px) ; visibility: visible; }
+    50%  {transform: translateX(700px) ; visibility: visible;}
+    100% {transform: translateX(0px) ; visibility: visible;}
+  }
+
+/* mort de germinion */
+
+.mort{
+  transition: transform 1s ease-in-out;
+  transform: rotate(10000deg);
+}
+
+
+/* annimation pour la déflagration */
+
+.megaboulefeu{
+  animation-name: bouledepetanque;
+  animation-duration: 0.5s;
+}
+
+@keyframes bouledepetanque {
+  0%   { opacity: 0; transform: translateX(0px) ; width: 1%; visibility: visible;}
+  50%  { opacity: 100; transform: translateX(350px) ; width: 40%; visibility: visible;}
+  100% {opacity: 100; transform: translateX(700px) ; width: 40%; visibility: visible; }
+}
+ 
